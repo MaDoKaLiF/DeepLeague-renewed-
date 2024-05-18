@@ -13,9 +13,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import PIL
 import tensorflow as tf
-from keras import backend as K
-from keras.layers import Input, Lambda
-from keras.models import Model
+
+import tensorflow as tf
+from tensorflow.keras.layers import Input, Lambda
+from tensorflow.keras.models import Model
+
 
 from yad2k.models.keras_yolo import (preprocess_true_boxes, yolo_body,
                                      yolo_eval, yolo_head, yolo_loss)

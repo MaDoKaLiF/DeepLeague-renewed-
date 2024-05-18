@@ -8,8 +8,9 @@ from subprocess import call
 import random
 
 import numpy as np
-from keras import backend as K
-from keras.models import load_model
+import tensorflow as tf
+from tensorflow.keras.models import load_model
+
 from PIL import Image, ImageDraw, ImageFont
 
 import cv2

@@ -8,11 +8,12 @@ import sys
 import matplotlib.pyplot as plt
 import numpy as np
 import PIL
+
 import tensorflow as tf
-from keras import backend as K
-from keras.layers import Input, Lambda, Conv2D
-from keras.models import load_model, Model
-from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+from tensorflow.keras.layers import Input, Lambda, Conv2D
+from tensorflow.keras.models import load_model, Model
+from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+
 
 from yad2k.models.keras_yolo import (preprocess_true_boxes, yolo_body,
                                      yolo_eval, yolo_head, yolo_loss)
