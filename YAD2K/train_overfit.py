@@ -14,9 +14,9 @@ import numpy as np
 import PIL
 import tensorflow as tf
 
-import tensorflow as tf
 from tensorflow.keras.layers import Input, Lambda
 from tensorflow.keras.models import Model
+from tensorflow.keras import backend as K
 
 
 from yad2k.models.keras_yolo import (preprocess_true_boxes, yolo_body,

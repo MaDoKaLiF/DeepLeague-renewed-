@@ -13,6 +13,7 @@ import tensorflow as tf
 from tensorflow.keras.layers import Input, Lambda, Conv2D
 from tensorflow.keras.models import load_model, Model
 from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+from tensorflow.keras import backend as K
 
 
 from yad2k.models.keras_yolo import (preprocess_true_boxes, yolo_body,
